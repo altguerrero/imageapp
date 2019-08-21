@@ -1,9 +1,11 @@
-const express = require("express");
-const config = require("./server/config");
-// database
-require("./database");
+const express = require('express');
+const config = require('./server/config');
 const app = config(express());
 
-app.listen(app.get("port"), () =>
-  console.log("server is on port", app.get("port"))
-);
+// database
+require('./database');
+
+// Starting the server
+app.listen(app.get('port'), () => {
+  console.log('Server on port', app.get('port'));
+});

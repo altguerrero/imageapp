@@ -1,6 +1,9 @@
-const mogoose = require("mogoose");
-const { database } = require("./keys");
+const mongoose = require('mongoose');
 
-mogoose.connect(database.URI, {
-  useNewUrlParser: true
-});
+const { database } = require('./keys');
+
+mongoose.connect(database.URI, {
+  useNewUrlParser: true    
+})
+  .then(db => console.log('db is connected'))
+  .catch(err => console.log(err));
