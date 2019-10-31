@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-imgshare",
+  "version": "1.0.0",
+  "description": "![](docs/screenshot1.png) ![](docs/screenshot2.png)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaztTech/nodejs-imgshare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaztTech/nodejs-imgshare/issues"
+  },
+  "homepage": "https://github.com/FaztTech/nodejs-imgshare#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "fs-extra": "^8.1.0",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
